@@ -56,6 +56,7 @@ GET /get
   "origin": "45.23.234.8",
   "url": "http://a0207c42-pmhttpbin-pmhttpb-c018-592832243.us-east-1.elb.amazonaws.com/get"
 }
+```
 
 ## HTTP 1.0
 
@@ -68,6 +69,7 @@ GET /get
 - Perhaps response headers are required by to be sent by the server.
 - _The request URL claimed by the web server is the Amazone hostname, combined with `/get` specified in the HTTP request._
 
+```bash
 $ nc httpbin.org 80
 GET /get HTTP/1.0
 
@@ -89,7 +91,11 @@ Access-Control-Allow-Credentials: true
   "origin": "45.23.234.8",
   "url": "http://a0207c42-pmhttpbin-pmhttpb-c018-592832243.us-east-1.elb.amazonaws.com/get"
 }
+```
 
+## Remainder -- to be completed
+
+```bash
 # HTTP 1.1, which is historically the dominant version.
 # Host header apparently required
 ➜  ~ nc httpbin.org 80
